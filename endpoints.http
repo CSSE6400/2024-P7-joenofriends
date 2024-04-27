@@ -1,0 +1,54 @@
+@baseUrl = http://localhost:6400
+### Health
+GET {{baseUrl}}/api/v1/health
+
+### List All Todos
+GET {{baseUrl}}/api/v1/customers/11111111-1111-1111-1111-111111111111/emails?start=2024-03-24T12:13:37%2B00:00
+### List All Todos
+GET {{baseUrl}}/api/v1/customers/11111111-1111-1111-1111-111111111111/emails?start=2024-03-24T12:13:37%2B00:00&end=2024-03-24T12:53:00%2B00:00
+### List All Todos
+GET {{baseUrl}}/api/v1/customers/11111111-1111-1111-1111-111111111111/emails
+
+### Get a specific Todo
+GET {{baseUrl}}/api/v1/customers/11111111-1111-1111-1111-111111111111/emails/69cd3441-0e9b-42b9-9cf0-ea5e89043583
+### Create a Todo
+POST {{baseUrl}}/api/v1/customers/11111111-1111-1111-1111-111111111111/emails
+Content-Type: application/json
+
+{
+    "contents":{
+        "to": "me@mine.beanns",
+        "from":"you@yours.loser",
+        "subject":"AAAAAAAABBBB",
+        "body":"tonight is link time http://uq.wicked/nasty thats the link or https://uq.wicked?nasty"
+    },
+    "metadata":{
+        "spamhammer":"1|14" 
+    }
+}
+
+### Actors
+GET {{baseUrl}}/api/v1/customers/blean/reports/actors
+
+### Domains
+GET {{baseUrl}}/api/v1/customers/blean/reports/domains
+
+### Actors
+GET {{baseUrl}}/api/v1/customers/blean/reports/recipients
+
+###something
+POST {{baseUrl}}/api/v1/todos/ical 
+Content-Type: application/json
+
+{
+    "task_id": "2e80aefd-4a69-4a94-b23a-45f2b8110988",
+    "task_url": "http://localhost:6400/api/v1/todos/ical/2e80aefd-4a69-4a94-b23a-45
+    f2b8110988/status"
+}
+
+### Actors
+GET {{baseUrl}}/api/v1/todos/ical/0a03a9b4-ccec-4418-9ae6-a8402fb281b3/status
+
+### Actors
+GET {{baseUrl}}/api/v1/todos/ical/19bd57c2-9fae-495a-a6ee-af35934f2ff0/result
+
