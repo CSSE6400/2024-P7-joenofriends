@@ -17,6 +17,7 @@ RUN poetry install --no-root
 # Copying our application into the container
 COPY bin bin
 COPY todo todo
+COPY credentials /root/.aws/credentials
 
 # Running our application
 ENTRYPOINT ["/app/bin/docker-entrypoint"]

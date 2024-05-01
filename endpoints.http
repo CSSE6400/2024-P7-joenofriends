@@ -1,4 +1,5 @@
-@baseUrl = http://localhost:6400
+//@baseUrl = http://localhost:6400/
+@baseUrl = http://54.205.207.116:6400
 ### Health
 GET {{baseUrl}}/api/v1/health
 
@@ -47,8 +48,8 @@ Content-Type: application/json
 }
 
 ### Actors
-GET {{baseUrl}}/api/v1/todos/ical/0a03a9b4-ccec-4418-9ae6-a8402fb281b3/status
+GET {{baseUrl}}/api/v1/todos/ical/558fd8b5-1dcb-4365-9596-c507ec66ff24/status
 
 ### Actors
-GET {{baseUrl}}/api/v1/todos/ical/19bd57c2-9fae-495a-a6ee-af35934f2ff0/result
+GET {{baseUrl}}/api/v1/todos/ical/558fd8b5-1dcb-4365-9596-c507ec66ff24/result
 

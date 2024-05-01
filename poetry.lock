@@ -883,6 +883,23 @@ files = [
 ]
 
 [[package]]
+name = "watchtower"
+version = "3.2.0"
+description = "Python CloudWatch Logging"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "watchtower-3.2.0-py3-none-any.whl", hash = "sha256:3c41396e022dd48af2261737d3e78edaaa2d1c60ad59704fc7e2524ddfe50bfb"},
+    {file = "watchtower-3.2.0.tar.gz", hash = "sha256:7d515b2d0ae0d36168d3b32937e7f79c19b3efd25bbd16bcda233a092666b98c"},
+]
+
+[package.dependencies]
+boto3 = ">=1.9.253,<2"
+
+[package.extras]
+tests = ["build", "coverage", "mypy", "pyyaml", "ruff", "wheel"]
+
+[[package]]
 name = "wcwidth"
 version = "0.2.13"
 description = "Measures the displayed width of unicode strings in a terminal"
@@ -928,4 +945,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "f252935641120b5b8ef9253e9bc60360b8a43d6545249e060a2b4162349f40e5"
+content-hash = "56383c6ca9924c37371ae74f8a7c079b5805700969530d0ccb2f4cb5ba7b6e1c"

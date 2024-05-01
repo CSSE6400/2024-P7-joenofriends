@@ -38,6 +38,7 @@ services:
       dockerfile: Dockerfile.dev
     restart: always
     volumes:
+      - ./todo:/app/todo
       - ./credentials:/root/.aws/credentials
     environment:
       SQLALCHEMY_DATABASE_URI: postgresql://administrator:verySecretPassword@database:5432/todo
